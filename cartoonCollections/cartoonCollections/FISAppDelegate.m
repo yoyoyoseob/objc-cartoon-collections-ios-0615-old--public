@@ -16,8 +16,65 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+
+    NSArray *dwarvesToBeRollCalled = @[@"Doc",@"Dopey",@"Bashful"];
+    NSLog(@"%@",[self rollCallDwarves:dwarvesToBeRollCalled]);
+
+    NSArray *callsToBeGivenWithHeart = @[@"earth",@"wind"];
+    NSLog(@"%@",[self summonCaptainPlanet:callsToBeGivenWithHeart]);
+
+    NSLog(@"%@",[self longPlaneteerCalls:callsToBeGivenWithHeart]);
+
+    NSArray *possibleCheeses= @[@"prosciutto", @"cambert", @"baguette"];
+    NSLog(@"%@",[self findTheCheese:possibleCheeses]);
+
+    NSArray *scroogesMoney = @[@"$$",@"$",@"$$$"];
+    NSLog(@"%@",[self calculateDollarAmountsWithReceipt:scroogesMoney]);
+
+    
     return YES;
 }
+
+- (NSString *)rollCallDwarves:(NSArray *)dwarves
+{
+    return nil;
+}
+
+- (NSArray *)summonCaptainPlanet:(NSArray *)planteerCalls
+{
+    return nil;
+}
+
+- (NSArray *)longPlaneteerCalls:(NSArray *)planteerCalls
+{
+    return nil;
+}
+
+- (NSString *)findTheCheese:(NSArray *)cheeses
+{
+    return nil;
+}
+
+- (NSArray *)calculateDollarAmountsWithReceipt:(NSArray *)receipt
+{
+    return nil;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
