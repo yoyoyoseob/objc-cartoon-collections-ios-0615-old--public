@@ -1,4 +1,17 @@
+---
+tags: arrays, beginner, methods
+language: objc
+---
+
 # Cartoon Collections
+
+## Submitting This Lab
+
+  1. Fork the lab.
+  2. Work with the person next to you, or people around you. No more than 3 to a group.
+  3. When you are done submit a single pull-request for your team back to the main repo on flatiron-school-students
+  4. Include in the pull-request description who you worked with!
+  5. [Celebrate!](https://www.youtube.com/watch?v=StTqXEQ2l-Y&feature=kp)
 
 ## Instructions
 
