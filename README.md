@@ -51,7 +51,7 @@ language: objc
   @[@"earth"]
   ```
 
-  4. Write the `findTheCheese:(NSArrray *)cheeses` method. This method should look through the `NSArray` of `NSString`s and find the first string that matches one of the following cheese strings: `@"cheddar", @"gouda", or @"camembert"`. It should then return the `NSString` of the resulting search. If it doesn't find anything, return `nil`.
+  4. Write the `findTheCheese:(NSArrray *)cheeses` method. This method should look through the `NSArray` of `NSString`s and find the first string that matches one of the following cheese strings: `@"cheddar", @"gouda", or @"cambert"`. It should then return the `NSString` of the resulting search. If it doesn't find anything, return `nil`.
 
   5. Write the `calculateDollarAmountsWithReceipt:(NSArray *)receipt` method. This method should keep help someone keep track of their money. Sadly...people keep their receipts in a weird way. They keep in them in an `NSArray` that looks like this:
 
