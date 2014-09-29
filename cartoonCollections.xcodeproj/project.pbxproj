@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D959789C5448B6DB49DA04A /* libPods-cartoonCollectionsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CFE709488E0C6468972C35 /* libPods-cartoonCollectionsTests.a */; };
 		D8478076193F52D8005FEBA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8478075193F52D8005FEBA5 /* Foundation.framework */; };
 		D8478078193F52D8005FEBA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8478077193F52D8005FEBA5 /* CoreGraphics.framework */; };
 		D847807A193F52D8005FEBA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8478079193F52D8005FEBA5 /* UIKit.framework */; };
@@ -18,7 +19,6 @@
 		D8478090193F52D8005FEBA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8478075193F52D8005FEBA5 /* Foundation.framework */; };
 		D8478091193F52D8005FEBA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8478079193F52D8005FEBA5 /* UIKit.framework */; };
 		D8478099193F52D8005FEBA5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8478097193F52D8005FEBA5 /* InfoPlist.strings */; };
-		D847809B193F52D8005FEBA5 /* cartoonCollectionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D847809A193F52D8005FEBA5 /* cartoonCollectionsTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C982BEA7061979FE8EFEBD6 /* Pods-cartoonCollectionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cartoonCollectionsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cartoonCollectionsTests/Pods-cartoonCollectionsTests.release.xcconfig"; sourceTree = "<group>"; };
+		87CFE709488E0C6468972C35 /* libPods-cartoonCollectionsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-cartoonCollectionsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9819893C6AE90F8B0FECE62 /* Pods-cartoonCollectionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cartoonCollectionsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cartoonCollectionsTests/Pods-cartoonCollectionsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D8478072193F52D8005FEBA5 /* cartoonCollections.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cartoonCollections.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8478075193F52D8005FEBA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8478077193F52D8005FEBA5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,7 +50,6 @@
 		D847808E193F52D8005FEBA5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D8478096193F52D8005FEBA5 /* cartoonCollectionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cartoonCollectionsTests-Info.plist"; sourceTree = "<group>"; };
 		D8478098193F52D8005FEBA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D847809A193F52D8005FEBA5 /* cartoonCollectionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cartoonCollectionsTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +70,22 @@
 				D847808F193F52D8005FEBA5 /* XCTest.framework in Frameworks */,
 				D8478091193F52D8005FEBA5 /* UIKit.framework in Frameworks */,
 				D8478090193F52D8005FEBA5 /* Foundation.framework in Frameworks */,
+				3D959789C5448B6DB49DA04A /* libPods-cartoonCollectionsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		681F2D57272917747C05FBC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9819893C6AE90F8B0FECE62 /* Pods-cartoonCollectionsTests.debug.xcconfig */,
+				2C982BEA7061979FE8EFEBD6 /* Pods-cartoonCollectionsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D8478069193F52D8005FEBA5 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +93,7 @@
 				D8478094193F52D8005FEBA5 /* cartoonCollectionsTests */,
 				D8478074193F52D8005FEBA5 /* Frameworks */,
 				D8478073193F52D8005FEBA5 /* Products */,
+				681F2D57272917747C05FBC7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +113,7 @@
 				D8478077193F52D8005FEBA5 /* CoreGraphics.framework */,
 				D8478079193F52D8005FEBA5 /* UIKit.framework */,
 				D847808E193F52D8005FEBA5 /* XCTest.framework */,
+				87CFE709488E0C6468972C35 /* libPods-cartoonCollectionsTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,7 +143,6 @@
 		D8478094193F52D8005FEBA5 /* cartoonCollectionsTests */ = {
 			isa = PBXGroup;
 			children = (
-				D847809A193F52D8005FEBA5 /* cartoonCollectionsTests.m */,
 				D8478095193F52D8005FEBA5 /* Supporting Files */,
 			);
 			path = cartoonCollectionsTests;
@@ -168,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D84780A1193F52D8005FEBA5 /* Build configuration list for PBXNativeTarget "cartoonCollectionsTests" */;
 			buildPhases = (
+				AC30945B7D452A983632D48E /* Check Pods Manifest.lock */,
 				D8478089193F52D8005FEBA5 /* Sources */,
 				D847808A193F52D8005FEBA5 /* Frameworks */,
 				D847808B193F52D8005FEBA5 /* Resources */,
+				5FD83A2AC6AE9C674EF3FCC3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +250,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5FD83A2AC6AE9C674EF3FCC3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cartoonCollectionsTests/Pods-cartoonCollectionsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC30945B7D452A983632D48E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D847806E193F52D8005FEBA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -249,7 +297,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D847809B193F52D8005FEBA5 /* cartoonCollectionsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +428,7 @@
 		};
 		D84780A2193F52D8005FEBA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9819893C6AE90F8B0FECE62 /* Pods-cartoonCollectionsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cartoonCollections.app/cartoonCollections";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -403,6 +451,7 @@
 		};
 		D84780A3193F52D8005FEBA5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C982BEA7061979FE8EFEBD6 /* Pods-cartoonCollectionsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cartoonCollections.app/cartoonCollections";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -438,6 +487,7 @@
 				D84780A0193F52D8005FEBA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D84780A1193F52D8005FEBA5 /* Build configuration list for PBXNativeTarget "cartoonCollectionsTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +496,7 @@
 				D84780A3193F52D8005FEBA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
