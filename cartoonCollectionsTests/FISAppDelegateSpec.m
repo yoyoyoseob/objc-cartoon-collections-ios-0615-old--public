@@ -79,6 +79,7 @@ describe(@"FISAppDelegate", ^{
             
             it(@"should look through the NSArray of NSStrings and find the first string that matches one of the following cheese strings: 'cheddar', 'gouda', or 'cambert'. It should then return the NSString of the resulting search. If it doesn't find anything, return nil",^{
                 expect([appDelegate findTheCheese:possibleCheeses]).to.equal(@"cambert");
+                expect([appDelegate findTheCheese:@[@"prosciutto", @"baguette"]]).to.beNil();
             });
         
             it(@"should return an NSString",^{
