@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D959789C5448B6DB49DA04A /* libPods-cartoonCollectionsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CFE709488E0C6468972C35 /* libPods-cartoonCollectionsTests.a */; };
+		722A4D5319D9FBA100B3ABAB /* FISAppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 722A4D5219D9FBA100B3ABAB /* FISAppDelegateSpec.m */; };
 		D8478076193F52D8005FEBA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8478075193F52D8005FEBA5 /* Foundation.framework */; };
 		D8478078193F52D8005FEBA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8478077193F52D8005FEBA5 /* CoreGraphics.framework */; };
 		D847807A193F52D8005FEBA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8478079193F52D8005FEBA5 /* UIKit.framework */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		2C982BEA7061979FE8EFEBD6 /* Pods-cartoonCollectionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cartoonCollectionsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cartoonCollectionsTests/Pods-cartoonCollectionsTests.release.xcconfig"; sourceTree = "<group>"; };
+		722A4D5219D9FBA100B3ABAB /* FISAppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegateSpec.m; sourceTree = "<group>"; };
 		87CFE709488E0C6468972C35 /* libPods-cartoonCollectionsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-cartoonCollectionsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9819893C6AE90F8B0FECE62 /* Pods-cartoonCollectionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cartoonCollectionsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cartoonCollectionsTests/Pods-cartoonCollectionsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D8478072193F52D8005FEBA5 /* cartoonCollections.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cartoonCollections.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +145,7 @@
 		D8478094193F52D8005FEBA5 /* cartoonCollectionsTests */ = {
 			isa = PBXGroup;
 			children = (
+				722A4D5219D9FBA100B3ABAB /* FISAppDelegateSpec.m */,
 				D8478095193F52D8005FEBA5 /* Supporting Files */,
 			);
 			path = cartoonCollectionsTests;
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				722A4D5319D9FBA100B3ABAB /* FISAppDelegateSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

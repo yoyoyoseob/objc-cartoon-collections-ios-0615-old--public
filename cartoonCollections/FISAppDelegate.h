@@ -12,4 +12,11 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+-(NSString *)rollCallDwarves:(NSArray *)dwarves;
+-(NSArray *)summonCaptainPlanet:(NSArray *)planteerCalls;
+-(NSArray *)longPlaneteerCalls:(NSArray *)planteerCalls;
+-(NSString *)findTheCheese:(NSArray *)cheeses;
+-(NSArray *)calculateDollarAmountsWithReceipt:(NSArray *)receipt;
+
+
 @end
