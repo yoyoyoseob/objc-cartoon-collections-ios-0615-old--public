@@ -37,27 +37,71 @@
 
 - (NSString *)rollCallDwarves:(NSArray *)dwarves
 {
-    return nil;
+    NSMutableString *rollCall = [[NSMutableString alloc] initWithString:@""];
+    for (int i = 0; i < dwarves.count; i++){
+        if (i == ((dwarves.count) - 1)){
+            [rollCall appendFormat:@"%d. %@", i + 1, dwarves[i]];
+        }
+        else {
+            [rollCall appendFormat:@"%d. %@ | ", i +1, dwarves[i]];
+        }
+    }
+    return rollCall;
 }
 
 - (NSArray *)summonCaptainPlanet:(NSArray *)planteerCalls
 {
-    return nil;
+    NSMutableArray *earthPowered = [[NSMutableArray alloc] init];
+    for (int i = 0; i < planteerCalls.count; i++){
+        NSMutableString *poweredElement = [[planteerCalls[i] uppercaseString] mutableCopy];
+        [poweredElement appendFormat:@"!"];
+        [earthPowered addObject:poweredElement];
+    }
+    return earthPowered;
 }
 
 - (NSArray *)longPlaneteerCalls:(NSArray *)planteerCalls
 {
-    return nil;
+    NSMutableArray *longCalls = [[NSMutableArray alloc] init];
+    for (int i = 0; i < planteerCalls.count; i++){
+        if ([planteerCalls[i] length] > 4){
+            [longCalls addObject:planteerCalls[i]];
+        }
+    }
+    return longCalls;
 }
 
 - (NSString *)findTheCheese:(NSArray *)cheeses
 {
-    return nil;
+    // possibleCheeses = @[@"prosciutto", @"cambert", @"baguette"];
+    
+    NSString *chosenCheese = nil;
+    
+    for (NSString *cheese in cheeses){
+        if ([cheese isEqualToString:@"cheddar"] || [cheese isEqualToString: @"gouda"] || [cheese isEqualToString: @"cambert"]){
+            chosenCheese = cheese;
+        }
+        else if ([chosenCheese isEqual:@""]){
+            return chosenCheese;
+        }
+    }
+    return chosenCheese;
 }
 
 - (NSArray *)calculateDollarAmountsWithReceipt:(NSArray *)receipt
 {
-    return nil;
+    // scroogesMoney = @[@"$$",@"$",@"$$$"];
+    
+    NSMutableArray *makeItRain = [[NSMutableArray alloc] init];
+    
+    for (NSString *moneys in receipt){
+        NSUInteger counter = [[moneys componentsSeparatedByString:@"$"] count] - 1;
+        // NSLog(@"%d", numberOfMoneys);
+        NSMutableString *numberOfMoneys = [[@(counter) stringValue] mutableCopy]; //convert counter to string
+        [numberOfMoneys insertString:@"$" atIndex:0];
+        [makeItRain addObject:numberOfMoneys];
+    }
+    return makeItRain;
 }
 
 
